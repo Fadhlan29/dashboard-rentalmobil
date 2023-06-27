@@ -9,35 +9,35 @@ function PlanTrip() {
         <div className="container">
           <div className="plan-container">
             <div className="plan-container__title">
-              <h3>Plan your trip now</h3>
-              <h2>Quick & easy car rental</h2>
+              <h3>Rencanakan perjalanan Anda sekarang</h3>
+              <h2>Sewa mobil cepat & mudah</h2>
             </div>
 
             <div className="plan-container__boxes">
               <div className="plan-container__boxes__box">
                 <img src={SelectCar} alt="icon_img" />
-                <h3>Select Car</h3>
+                <h3>Pilih Mobil</h3>
                 <p>
-                  We offers a big range of vehicles for all your driving needs.
-                  We have the perfect car to meet your needs
+                Kami menawarkan berbagai macam kendaraan untuk semua kebutuhan berkendara Anda.
+                Kami memiliki mobil yang sempurna untuk memenuhi kebutuhan Anda
                 </p>
               </div>
 
               <div className="plan-container__boxes__box">
                 <img src={Contact} alt="icon_img" />
-                <h3>Contact Operator</h3>
+                <h3>Hubungi Operator</h3>
                 <p>
-                  Our knowledgeable and friendly operators are always ready to
-                  help with any questions or concerns
+                  Operator kami yang berpengetahuan dan ramah selalu siap
+                  membantu dengan pertanyaan atau masalah apa pun
                 </p>
               </div>
 
               <div className="plan-container__boxes__box">
                 <img src={Drive} alt="icon_img" />
-                <h3>Let's Drive</h3>
+                <h3>Siap Berkendara</h3>
                 <p>
-                  Whether you're hitting the open road, we've got you covered
-                  with our wide range of cars
+                  Apakah Anda berada di jalan terbuka, kami siap membantu Anda
+                  dengan berbagai macam mobil kami
                 </p>
               </div>
             </div>

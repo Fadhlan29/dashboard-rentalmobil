@@ -37,25 +37,24 @@ function Hero() {
           <img className="bg-shape" src={BgShape} alt="bg-shape" />
           <div className="hero-content">
             <div className="hero-content__text">
-              <h4>Plan your trip now</h4>
+              <h4>Rencanakan Perjalanan Anda Sekarang</h4>
               <h1>
-                Save <span>big</span> with our car rental
+              Hemat <span>Besar</span> dengan rental mobil kami
               </h1>
               <p>
-                Rent the car of your dreams. Unbeatable prices, unlimited miles,
-                flexible pick-up options and much more.
+              Sewa mobil impian Anda. Harga tak terkalahkan, miles tak terbatas, opsi penjemputan fleksibel, dan banyak lagi..
               </p>
               <div className="hero-content__text__btns">
                 <Link
                   onClick={bookBtn}
                   className="hero-content__text__btns__book-ride"
-                  to="/"
+                  to="https://wa.me/6283117060631?text=Isi Pesan"
                 >
-                  Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
+                  Sewa Sekarang &nbsp; <i className="fa-solid fa-circle-check"></i>
                 </Link>
-                <Link className="hero-content__text__btns__learn-more" to="/">
+                {/* <Link className="hero-content__text__btns__learn-more" to="/">
                   Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
 

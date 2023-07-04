@@ -8,10 +8,10 @@ function Footer() {
               <li>
                 <span>CAR</span> Rental
               </li>
-              <li>
+              {/* <li>
                 We offers a big range of vehicles for all your driving needs. We
                 have the perfect car to meet your needs.
-              </li>
+              </li> */}
               <li>
                 <a href="tel:123456789">
                   <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
@@ -28,7 +28,7 @@ function Footer() {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   style={{ fontSize: "14px" }}
                   target="_blank"
@@ -37,9 +37,9 @@ function Footer() {
                 >
                   Design by XpeedStudio
                 </a>
-              </li>
+              </li> */}
             </ul>
-
+{/* 
             <ul className="footer-content__2">
               <li>Company</li>
               <li>
@@ -57,16 +57,16 @@ function Footer() {
               <li>
                 <a href="#home">How we work</a>
               </li>
-            </ul>
+            </ul> */}
 
             <ul className="footer-content__2">
-              <li>Working Hours</li>
+              <li>Jam Operasional</li>
               <li>Mon - Fri: 9:00AM - 9:00PM</li>
               <li>Sat: 9:00AM - 19:00PM</li>
               <li>Sun: Closed</li>
             </ul>
 
-            <ul className="footer-content__2">
+            {/* <ul className="footer-content__2">
               <li>Subscription</li>
               <li>
                 <p>Subscribe your Email address for latest news & updates.</p>
@@ -77,7 +77,7 @@ function Footer() {
               <li>
                 <button className="submit-email">Submit</button>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </footer>

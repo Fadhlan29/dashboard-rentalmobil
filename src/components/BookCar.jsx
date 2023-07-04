@@ -162,7 +162,7 @@ function BookCar() {
         <div className="container">
           <div className="book-content">
             <div className="book-content__box">
-              <h2>Book a car</h2>
+              <h2>Pesan mobil</h2>
 
               <p className="error-message">
                 All fields required! <i className="fa-solid fa-xmark"></i>
@@ -176,11 +176,10 @@ function BookCar() {
               <form className="box-form">
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-car"></i> &nbsp; Select Your Car
-                    Type <b>*</b>
+                    <i className="fa-solid fa-car"></i> &nbsp; Pilih Type mobil anda <b>*</b>
                   </label>
                   <select value={carType} onChange={handleCar}>
-                    <option>Select your car type</option>
+                    <option>Pilih type mobil</option>
                     <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                     <option value="VW Golf 6">VW Golf 6</option>
                     <option value="Toyota Camry">Toyota Camry</option>

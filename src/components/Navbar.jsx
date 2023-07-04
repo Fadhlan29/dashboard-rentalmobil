@@ -68,7 +68,7 @@ function Navbar() {
             <li>
               {" "}
               <Link className="about-link" to="/about">
-                Tentang
+                Tentang Kami
               </Link>
             </li>
             <li>

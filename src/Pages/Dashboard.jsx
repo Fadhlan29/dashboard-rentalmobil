@@ -28,7 +28,7 @@ const Dashboard = () => {
   }
 
   return (
-    <section>
+    <section className='dashboard'>
 
     {/* sidebar */}
       <div className='sidebar'>

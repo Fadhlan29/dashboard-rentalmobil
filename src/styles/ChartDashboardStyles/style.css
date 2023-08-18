@@ -1,0 +1,51 @@
+.chart-dashboard {
+    padding: 15px;
+    border: 1px solid #cacaca;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.chart-dashboard:hover {
+    box-shadow:  0px 3px 5px #cfcfcf;
+    transition: .1s ease-in-out;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.data-number {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.percentage-years {
+    font-size: 1.3rem;
+    display: flex;
+    margin-top: 5px;
+}
+
+.percentage {
+    background-color: #61f087;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.years {
+    font-size: 1.5rem;
+}
+
+.chart-wrapper {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-.dashboard-wrap {
+section {
     display: flex;
 }
 
@@ -15,7 +15,7 @@
 .sidebar {
     padding: 20px 10px;
     border-right: 1px solid #cacaca;
-    width: 250px;
+    width: 200px;
     height: 100vh;
 }
 .sidebar .logo {
@@ -39,11 +39,12 @@
     align-items: center;
     margin-bottom: 15px;
     padding: 8px;
+    border-radius: 8px;
 }
 
 .sidebar ul li:hover {
     background-color: #e1e1e1;
-    border-radius: 8px;
+    transition: .1s ease-in-out;
 }
 
 ul li h2 {
@@ -53,14 +54,17 @@ ul li h2 {
 }
 
 
-.header-list {
+.header-others {
     color: var(--text-sidebar);
     margin-left: 10px;
 }
+
+.others-list {
+    cursor: pointer;
+}
 /* sidebar end */
 
-/* content */
-/* content end */
+/* content header*/
 .main {
     width: 100%;
 }
@@ -105,6 +109,11 @@ ul li h2 {
     justify-content: center;
 }
 
+.right {
+    display: flex;
+    gap: 10px;
+}
+
 .right .icon-right {
     background-color: #ebebeb;
     padding: 5px;
@@ -112,13 +121,19 @@ ul li h2 {
     text-align: center;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .right .icon-right:hover {
     background-color: #cfcfcf;
+    transition: .1s ease-in-out;
 }
 
 .notification{
+    position: relative;
+}
+
+.profile{
     position: relative;
 }
 
@@ -128,13 +143,47 @@ ul li h2 {
     border-radius: 10px;
     top: 50px;
     right: 5px;
-    box-shadow:  0px 3px 8px #a1a1a1;
+    box-shadow:  0px 3px 5px #cfcfcf;
+    padding: 20px;
+}
+
+.profile-content {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 50px;
+    right: 5px;
+    box-shadow:  0px 3px 5px #cfcfcf;
     padding: 20px;
 }
 
 .notification-content-hide {
     display: none;
 }
+
+.profile-content-hide {
+    display: none;
+}
+/* content header end */
+
+/* main content */
+
+.content-title {
+    font-size: 2.5rem;
+    padding: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #cacaca;
+}
+
+.data-chart {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* main content end */
+
 
 /* handphone */
 @media (max-width: 600px) {

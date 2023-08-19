@@ -1,5 +1,4 @@
-import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import { HeroPages, Footer } from "../components";
 import Person1 from "../images/team/1.png";
 import Person2 from "../images/team/2.png";
 import Person3 from "../images/team/3.png";

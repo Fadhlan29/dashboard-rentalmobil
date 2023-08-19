@@ -4,7 +4,6 @@ import logo from '../images/logo/logo.png'
 import { BiBell, BiCog, BiSearch, BiUser } from 'react-icons/bi'
 import ChartDashboard from '../components/ChartDashboard'
 
-
 const Dashboard = () => {
 
   const [notification, setNotification] = useState(false)

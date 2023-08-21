@@ -3,6 +3,7 @@ import '../styles/DashboardStyles/style.css'
 import logo from '../images/logo/logo.png'
 import { BiBell, BiCog, BiSearch, BiUser } from 'react-icons/bi'
 import ChartDashboard from '../components/ChartDashboard'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
 
@@ -37,11 +38,23 @@ const Dashboard = () => {
 
         <div className='list-item'>
           <div className='others'>
-            <h2 className='header-others'>OTHERS</h2>
+            <h2 className='header-others'>Page</h2>
             <ul>
               <li className='others-list'>
-                <BiCog size={25} color='#6c6c6c'/>
-                <h2>Settings</h2>
+              <BiCog size={25} color='#6c6c6c'/>
+              <Link to='/dashboard'><h2>Dashboard</h2></Link>
+              </li>
+              <li className='others-list'>
+              <BiCog size={25} color='#6c6c6c'/>
+              <Link to='/pesanan'><h2>Pesanan</h2></Link>
+              </li>
+              <li className='others-list'>
+              <BiCog size={25} color='#6c6c6c'/>
+              <Link to=''><h2>Pengguna</h2></Link>
+              </li>
+              <li className='others-list'>
+              <BiCog size={25} color='#6c6c6c'/>
+              <Link to=''><h2>Mobil</h2></Link>
               </li>
             </ul>
           </div>

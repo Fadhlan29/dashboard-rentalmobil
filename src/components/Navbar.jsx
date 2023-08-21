@@ -2,12 +2,16 @@ import { Link } from "react-router-dom";
 import Logo from "../images/logo/logo.png";
 import { useState } from "react";
 
-function Navbar() {
+function Navbar({ showNavbar }) {
   const [nav, setNav] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
   };
+
+  if (!showNavbar) {
+    return null;
+  }
 
   return (
     <>

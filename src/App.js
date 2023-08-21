@@ -7,11 +7,16 @@ import Models from "./Pages/Models";
 import TestimonialsPage from "./Pages/TestimonialsPage";
 import Team from "./Pages/Team";
 import Contact from "./Pages/Contact";
+import Dashboard from "./Pages/Dashboard";
+import { useLocation } from "react-router-dom"; 
 
 function App() {
+
+  const location = useLocation()
+
   return (
     <>
-      <Navbar />
+      <Navbar showNavbar={location.pathname !== "/dashboard"}/>
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -19,6 +24,7 @@ function App() {
         <Route path="testimonials" element={<TestimonialsPage />} />
         <Route path="team" element={<Team />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );

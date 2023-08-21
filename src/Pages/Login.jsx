@@ -24,9 +24,9 @@ const SignUp = () => {
             </div>
             <input type='password'/>
           </div>
-
+          
           <button className='btn-form'>
-            Buat akun
+            Login
           </button>
         </form>
       </div>

@@ -8,10 +8,10 @@ import {getPesanan,
 from "../controller/PesananController.js";
 
 const route = express.Router();
-route.get('/pengguna', getPesanan);
-route.get('/pengguna/:id', getPesananById);
-route.post('/pengguna', createAkses);
-route.patch('/pengguna/:id', updatePesanan);
-route.delete('/pengguna/:id', deletePesanan);
+route.get('/pesanan', getPesanan);
+route.get('/pesanan/:id', getPesananById);
+route.post('/pesanan', createAkses);
+route.patch('/pesanan/:id', updatePesanan);
+route.delete('/pesanan/:id', deletePesanan);
 
 export default route;

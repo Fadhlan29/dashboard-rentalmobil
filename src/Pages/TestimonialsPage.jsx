@@ -1,6 +1,4 @@
-import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
-import Testimonials from "../components/Testimonials";
+import { HeroPages, Footer, Testimonials } from "../components";
 
 function TestimonialsPage() {
   return (

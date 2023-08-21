@@ -1,5 +1,4 @@
-import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import { HeroPages, Footer } from '../components/index' 
 
 function Contact() {
   return (

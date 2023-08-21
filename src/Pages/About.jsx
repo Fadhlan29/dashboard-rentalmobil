@@ -1,6 +1,4 @@
-import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
-import PlanTrip from "../components/PlanTrip";
+import { Footer, HeroPages, PlanTrip } from "../components/index";
 import AboutMain from "../images/about/about-main.jpg";
 import Box1 from "../images/about/icon1.png";
 import Box2 from "../images/about/icon2.png";

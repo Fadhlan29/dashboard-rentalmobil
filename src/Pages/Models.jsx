@@ -1,5 +1,4 @@
-import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import { HeroPages, Footer } from "../components";
 import CarImg1 from "../images/cars-big/audi-box.png";
 import CarImg2 from "../images/cars-big/golf6-box.png";
 import CarImg3 from "../images/cars-big/toyota-box.png";

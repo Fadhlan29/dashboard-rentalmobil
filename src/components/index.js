@@ -12,6 +12,9 @@ import Navbar from "./Navbar";
 import PickCar from "./PickCar";
 import PlanTrip from "./PlanTrip";
 import Testimonials from "./Testimonials";
+import NavbarDashboard from "./NavbarDashboard";
+import Sidebar from "./Sidebar";
+import TableUsers from "./TableUsers";
 
 export {
     Banner,
@@ -27,5 +30,8 @@ export {
     Navbar,
     PickCar,
     PlanTrip,
-    Testimonials
+    Testimonials,
+    NavbarDashboard,
+    Sidebar,
+    TableUsers
 }

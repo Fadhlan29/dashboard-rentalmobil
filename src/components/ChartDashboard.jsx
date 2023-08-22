@@ -31,7 +31,7 @@ const ChartDashboard = (props) => {
       <div className="chart-wrapper">
         <Line
           data = {{
-            labels: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'],  
+            labels: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o'],  
             datasets: [
               {
                 data: data,   

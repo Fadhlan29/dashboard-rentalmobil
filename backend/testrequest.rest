@@ -1,0 +1,22 @@
+GET http://localhost:5000/hak_akses
+###
+GET http://localhost:5000/pengguna
+
+###
+POST http://localhost:5000/pengguna
+Content-Type: application/json
+
+{
+    "username": "risqi",
+    "password": "risqi",
+    "email": "risqi@gmail.com",
+    "id_akses" : "2"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+{
+   "username": "risqi",
+    "password": "risqi",
+}

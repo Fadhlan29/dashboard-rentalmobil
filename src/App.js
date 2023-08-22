@@ -11,7 +11,10 @@ import {
   Contact,
   Dashboard,
   SignUp,
-  Login
+  Login,
+  Pesanan,
+  Pengguna,
+  Mobil
 } from './Pages/index '
 
 function App() {
@@ -20,7 +23,13 @@ function App() {
 
   return (
     <>
-      <Navbar showNavbar={location.pathname !== "/dashboard" && location.pathname !== "/signup" && location.pathname !== "/login"}/>
+      <Navbar showNavbar={
+        location.pathname !== "/dashboard" && 
+        location.pathname !== "/signup" && 
+        location.pathname !== "/login" && 
+        location.pathname !== "/pesanan" &&
+        location.pathname !== "/pengguna" &&
+        location.pathname !== "/mobil"}/>
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -31,6 +40,9 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="login" element={<Login />} />
+        <Route path="pesanan" element={<Pesanan />} />
+        <Route path="pengguna" element={<Pengguna />} />
+        <Route path="mobil" element={<Mobil />} />
       </Routes>
     </>
   );

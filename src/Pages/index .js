@@ -7,6 +7,9 @@ import SignUp from "./SignUp";
 import Team from "./Team";
 import TestimonialsPage from "./TestimonialsPage";
 import Login from "./Login";
+import Pesanan from "./Pesanan";
+import Pengguna from "./Pengguna";
+import Mobil from "./Mobil";
 
 export {
     About,
@@ -17,5 +20,8 @@ export {
     SignUp,
     Team,
     TestimonialsPage,
-    Login
+    Login,
+    Pesanan,
+    Pengguna,
+    Mobil
 }

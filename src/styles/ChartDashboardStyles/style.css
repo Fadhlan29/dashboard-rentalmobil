@@ -1,7 +1,7 @@
 .chart-dashboard {
     padding: 15px;
     border: 1px solid #cacaca;
-    width: 250px;
+    width: 23%;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -20,7 +20,7 @@
 }
 
 .data-number {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -39,13 +39,36 @@
 }
 
 .years {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .chart-wrapper {
-    width: 130px;
-    height: 100px;
+    width: 40%;
+    height: 30%;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .chart-dashboard {
+        width: 35%;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .years {
+        font-size: 1.2rem;
+    }
+    .percentage-years {
+        font-size: 1.2rem;
+    }
+    .data-number {
+        font-size: 1.5rem;
+    }
+    .chart-wrapper {
+        width: 50%;
+        height: 40%;
+        padding-left: 30px;
+    }
 }

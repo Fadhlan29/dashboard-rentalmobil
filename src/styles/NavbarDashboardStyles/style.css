@@ -1,0 +1,96 @@
+.header-main {
+    width: 100%;
+    border-bottom: 1px solid #cacaca;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.left form {
+    display: flex;
+    border: 1px solid #747474;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.left form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.left form input:focus{
+    outline: none;
+}
+
+.left button {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background-color: #747474;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.right .icon-right {
+    background-color: #ebebeb;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.right .icon-right:hover {
+    background-color: #cfcfcf;
+    transition: .1s ease-in-out;
+}
+
+.notification{
+    position: relative;
+}
+
+.profile{
+    position: relative;
+}
+
+.notification-content {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 50px;
+    right: 5px;
+    box-shadow:  0px 3px 5px #cfcfcf;
+    padding: 20px;
+}
+
+.profile-content {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 50px;
+    right: 5px;
+    box-shadow:  0px 3px 5px #cfcfcf;
+    padding: 20px;
+}
+
+.notification-content-hide {
+    display: none;
+}
+
+.profile-content-hide {
+    display: none;
+}

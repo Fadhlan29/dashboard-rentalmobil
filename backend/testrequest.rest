@@ -7,16 +7,24 @@ POST http://localhost:5000/pengguna
 Content-Type: application/json
 
 {
-    "username": "risqi",
-    "password": "risqi",
-    "email": "risqi@gmail.com",
+    "username": "admin",
+    "password": "admin",
+    "email": "admin@gmail.com",
     "id_akses" : "2"
 }
 
 ###
+
 POST http://localhost:5000/login
 Content-Type: application/json
 {
-   "username": "risqi",
-    "password": "risqi",
+   "username": "admin"
+}
+
+###
+POST http://localhost:5000/hak_akses
+
+Content-Type: application/json
+{
+   "nama_akses": "pengguna"
 }

@@ -15,7 +15,7 @@ const SignUp = () => {
           </div>
 
           <div className="form-input">
-            <label>Email atau Username</label>
+            <label>Username</label>
             <input type="text" data-type="email text"/>
           </div>
           <div className="form-input">

@@ -13,36 +13,35 @@ export const getPengguna = async(req, res) =>{
     }
 }
 
-export const Login = async(req, res) => {
+export const login = async(req, res) => {
     try {
         const response = await Pengguna.findAll({
             where:{
-                email: req.body.email
+                username: req.body.username
             }
         });
         const match = await bcrypt.compare(req.body.password, response[0].password);
-        if(!match) return res.status(400).json({msg: "Wrong Password"});
-        const userId = response[0].id;
-        const name = response[0].username;
+        if(!match) return res.status(400).json({msg: "Password Salah"});
+        const penggunaId = response[0].id;
+        const username = response[0].username;
         const email = response[0].email;
-        const accessToken = jwt.sign({userId, name, email}, process.env.ACCESS_TOKEN_SECRET,{
+        const accessToken = jwt.sign({penggunaId,username,email}, process.env.ACCESS_TOKEN_SECRET,{
             expiresIn: '20s'
         });
-        const refreshToken = jwt.sign({userId, name, email}, process.env.REFRESH_TOKEN_SECRET,{
+        const refreshToken = jwt.sign({penggunaId,username,email}, process.env.REFRESH_TOKEN_SECRET,{
             expiresIn: '1d'
         });
-        await Pengguna.update({refresh_token: refreshToken},{
+        await Pengguna.update({refresh_token: refreshToken}, {
             where:{
-                id: userId
+                id: penggunaId
             }
         });
         res.cookie('refreshToken', refreshToken,{
-            httpOnly: true,
             maxAge: 24 * 60 * 60 * 1000
         });
         res.json({ accessToken });
     } catch (error) {
-        res.status(404).json({msg:"Email tidak ditemukan"});
+        res.status(404).json({msg:"Username tidak ditemukan"});
     }
 }
 
@@ -57,7 +56,7 @@ export const register = async(req,res) =>{
             email: email,
             id_akses: id_akses
         });
-        res.status(201).json({msg: "User Created"});
+        res.json({msg: "Registration Successful"});
     } catch (error) {
         console.log(error);
     }

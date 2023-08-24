@@ -8,6 +8,7 @@ const Pengguna = db.define('pengguna',{
     username: DataTypes.STRING,
     password: DataTypes.STRING,
     email: DataTypes.STRING,
+    refresh_token: DataTypes.TEXT,
 },{
     freezeTableName:true
 });

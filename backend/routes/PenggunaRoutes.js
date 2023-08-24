@@ -1,8 +1,8 @@
 import express from "express";
 import {getPengguna,
         getPenggunaById,
-        Login,
         register,
+        login,
         updatePengguna,
         deletePengguna,
         } 
@@ -13,7 +13,7 @@ const route = express.Router();
 route.get('/pengguna' ,getPengguna);
 route.get('/pengguna/:id', getPenggunaById);
 route.post('/pengguna', register);
-route.post('/login', Login);
+route.post('/login', login);
 route.patch('/pengguna/:id', updatePengguna);
 route.delete('/pengguna/:id', deletePengguna);
 

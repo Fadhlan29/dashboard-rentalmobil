@@ -3,6 +3,7 @@ import {getPengguna,
         getPenggunaById,
         register,
         login,
+        logout,
         updatePengguna,
         deletePengguna,
         } 
@@ -17,6 +18,7 @@ route.get('/pengguna/:id', getPenggunaById);
 route.post('/pengguna', register);
 route.post('/login', login);
 route.get('/token', refreshToken);
+route.delete('/logout', logout);
 route.patch('/pengguna/:id', updatePengguna);
 route.delete('/pengguna/:id', deletePengguna);
 

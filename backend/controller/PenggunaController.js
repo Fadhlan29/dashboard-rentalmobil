@@ -66,6 +66,25 @@ export const register = async(req,res) =>{
     }
 }
 
+export const logout = async(req,res) => {
+    const refreshToken = req.cookies.refreshToken;
+    if(!refreshToken) return res.sendStatus(204);
+    const response = await Pengguna.findAll({
+         where:{
+            refresh_token: refreshToken
+        }
+    });
+     if(!response[0]) return res.sendStatus(204);
+    const penggunaId = response[0].id;
+    await Pengguna.update({refreshToken: null},{
+        where : {
+                id: penggunaId
+        }
+    });
+    res.clearCookies('refreshToken');
+    return res.sendStatus(200);
+}
+
 export const getPenggunaById = async(req, res) =>{
     try {
         const response = await Pengguna.findOne({

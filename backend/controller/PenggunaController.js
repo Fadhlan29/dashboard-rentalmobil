@@ -6,29 +6,32 @@ import jwt from "jsonwebtoken";
 
 export const getPengguna = async(req, res) =>{
     try {
-        const response = await Pengguna.findAll();
-        res.status(200).json(response);
+        const response = await Pengguna.findAll({
+            attributes:['id','username','email']
+        });
+        res.json(response);
     } catch (error) {
         console.log(error.message);
     }
 }
 
 export const login = async(req, res) => {
+    const {username,password}= req.body;
     try {
         const response = await Pengguna.findAll({
-            where:{
-                username: req.body.username
+            where: {
+                username: username
             }
         });
-        const match = await bcrypt.compare(req.body.password, response[0].password);
+        const match = await bcrypt.compare(password, response[0].password);
         if(!match) return res.status(400).json({msg: "Password Salah"});
         const penggunaId = response[0].id;
-        const username = response[0].username;
+        const user = response[0].username;
         const email = response[0].email;
-        const accessToken = jwt.sign({penggunaId,username,email}, process.env.ACCESS_TOKEN_SECRET,{
+        const accessToken = jwt.sign({penggunaId,user,email}, process.env.ACCESS_TOKEN_SECRET,{
             expiresIn: '20s'
         });
-        const refreshToken = jwt.sign({penggunaId,username,email}, process.env.REFRESH_TOKEN_SECRET,{
+        const refreshToken = jwt.sign({penggunaId,user,email}, process.env.REFRESH_TOKEN_SECRET,{
             expiresIn: '1d'
         });
         await Pengguna.update({refresh_token: refreshToken}, {
@@ -37,6 +40,7 @@ export const login = async(req, res) => {
             }
         });
         res.cookie('refreshToken', refreshToken,{
+            httpOnly: true,
             maxAge: 24 * 60 * 60 * 1000
         });
         res.json({ accessToken });

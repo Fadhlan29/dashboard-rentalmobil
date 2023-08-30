@@ -14,6 +14,6 @@ const Mobil = db.define('mobil',{
 
 export default Mobil;
 
-(async()=>{
-    await db.sync();
-})();
+// (async()=>{
+//     await db.sync();
+// })();

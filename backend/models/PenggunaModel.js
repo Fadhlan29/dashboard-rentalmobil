@@ -16,6 +16,6 @@ const Pengguna = db.define('pengguna',{
 Pengguna.belongsTo(HakAkses, { foreignKey: 'id_akses' });
 export default Pengguna;
 
-(async()=>{
-    await db.sync();
-})();
+// (async()=>{
+//     await db.sync();
+// })();

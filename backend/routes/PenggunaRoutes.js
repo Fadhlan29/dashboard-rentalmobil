@@ -13,7 +13,7 @@ import { refreshToken } from "../controller/RefreshToken.js";
 
 
 const route = express.Router();
-route.get('/pengguna' ,VeryfyToken ,getPengguna);
+route.get('/pengguna' , VeryfyToken , getPengguna);
 route.get('/pengguna/:id', getPenggunaById);
 route.post('/pengguna', register);
 route.post('/login', login);

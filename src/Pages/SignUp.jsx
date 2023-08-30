@@ -39,6 +39,7 @@ const SignUp = () => {
           <div className="title-form">
             <h1>Buat akun baru </h1>
             <p>Sudah punya akun? <Link to='/login'>Masuk</Link></p>
+            <p>{msg}</p>
           </div>
           <div className="form-input">
             <label>Username</label>
@@ -55,7 +56,7 @@ const SignUp = () => {
             <input type='password'value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
           <button className='btn-form'>
-            Login
+            Register
           </button>
         </form>
       </div>

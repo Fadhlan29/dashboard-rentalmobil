@@ -15,7 +15,6 @@ const Dashboard = () => {
     data4: [55, 3, 40, 20, 50, 8, 65, 6, 35, 10, 45, 25, 30, 15, 60],
   };
 
-
   return (
     <section className="dashboard">
       {/* sidebar */}

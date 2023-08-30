@@ -1,7 +1,7 @@
 GET http://localhost:5000/hak_akses
 ###
 GET http://localhost:5000/pengguna
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZW5nZ3VuYUlkIjoxNiwidXNlciI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTMzODE0MDAsImV4cCI6MTY5MzM4MTQyMH0.YBEqZYjM_NUebcY43jeaDp2mftyVd2c2A2mJ4yq7HWA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZW5nZ3VuYUlkIjoxNiwidXNlciI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTMzODU4ODQsImV4cCI6MTY5MzM4NTg5OX0.seu4_NKlRzQhHj1wKn6iQ-plGFN8Cx6mX5Op5sBVwdY
 ###
 POST http://localhost:5000/login
 Content-Type: application/json

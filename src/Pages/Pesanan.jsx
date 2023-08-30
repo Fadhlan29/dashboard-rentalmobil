@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavbarDashboard, Sidebar, TableUsers } from '../components'
+import { NavbarDashboard, Sidebar, TableUsers, Tables } from '../components'
 import '../styles/PesananStyles/style.css'
 
 const Pesanan = () => {
@@ -10,7 +10,8 @@ const Pesanan = () => {
         <NavbarDashboard />
         <h1 className="content-title">Pesanan</h1>
         <div className="main-content">
-          <TableUsers/>
+          {/* <TableUsers/> */}
+          <Tables />
         </div>
       </div>
     </div>

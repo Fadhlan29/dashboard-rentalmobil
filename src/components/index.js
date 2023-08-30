@@ -15,6 +15,7 @@ import Testimonials from "./Testimonials";
 import NavbarDashboard from "./NavbarDashboard";
 import Sidebar from "./Sidebar";
 import TableUsers from "./TableUsers";
+import Tables from "./Tables";
 
 export {
     Banner,
@@ -33,5 +34,6 @@ export {
     Testimonials,
     NavbarDashboard,
     Sidebar,
-    TableUsers
+    TableUsers,
+    Tables
 }

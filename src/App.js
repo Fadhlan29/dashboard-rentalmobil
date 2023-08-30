@@ -1,4 +1,6 @@
 import "../src/dist/styles.css";
+import "primereact/resources/themes/lara-light-indigo/theme.css";     
+import "primereact/resources/primereact.min.css";                                       
 import Navbar from "../src/components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom"; 

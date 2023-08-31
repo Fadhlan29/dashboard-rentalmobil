@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/NavbarDashboardStyles/style.css";
-import { BiSearch, BiBell, BiUser } from 'react-icons/bi'
+import { BiSearch, BiBell, BiUser, BiExit } from 'react-icons/bi'
+import { Avatar } from 'primereact/avatar';
+import dummy_user from '../images/dummy_user.jpg'
 
 const NavbarDashboard = () => {
   const [notification, setNotification] = useState(false);
@@ -29,25 +31,33 @@ const NavbarDashboard = () => {
 
       <div className="right">
         <div className="notification">
-          <button className="icon-right" onClick={handleNotification}>
+          <button className="notification-icon" onClick={handleNotification}>
             <BiBell size={25} color="#6c6c6c" />
           </button>
           <div
             className={
               notification
-                ? "notification-content"
-                : "notification-content-hide"
+                ? "notification-wrapper"
+                : "notification-wrapper-hide"
             }
           >
             <p>Notification</p>
           </div>
         </div>
         <div className="profile">
-          <button className="icon-right" onClick={handleProfile}>
-            <BiUser size={25} color="#6c6c6c" />
+          <button className="profile-logo" onClick={handleProfile}>
+            <Avatar image={dummy_user} size="xlarge" shape="circle"/>
+            {/* <p>dasndalk</p> */}
           </button>
-          <div className={profile ? "profile-content" : "profile-content-hide"}>
-            <p>profile</p>
+          <div className={profile ? "profile-wrapper" : "profile-wrapper-hide"}>
+            <button className="profile-content" style={{ marginBottom: '15px' }} onClick={() => alert('tombol berfungsi')}>
+              <BiUser size={23} color="#6c6c6c"/>
+              <p>Profile</p>
+            </button>
+            <button className="profile-content" onClick={() => alert('tombol berfungsi')}>
+              <BiExit size={23} color="#6c6c6c"/>
+              <p>Logout</p>
+            </button>
           </div>
         </div>
       </div>

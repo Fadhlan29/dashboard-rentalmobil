@@ -1,22 +1,40 @@
 GET http://localhost:5000/hak_akses
 ###
 GET http://localhost:5000/pengguna
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZW5nZ3VuYUlkIjoxNiwidXNlciI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTMzODU4ODQsImV4cCI6MTY5MzM4NTg5OX0.seu4_NKlRzQhHj1wKn6iQ-plGFN8Cx6mX5Op5sBVwdY
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+accept: application/json
+
+{
+   "username": "admin",
+   "password": "admin"
+}
+
+###
+GET http://localhost:5000/token
 
 ###
 POST http://localhost:5000/pengguna
 Content-Type: application/json
 
 {
-    "username": "risqi",
-    "password": "risqi",
-    "email": "risqi@gmail.com",
+    "username": "admin",
+    "password": "admin",
+    "email": "admin@gmail.com",
     "id_akses" : "2"
 }
 
 ###
-POST http://localhost:5000/login
+
+get http://localhost:5000/login
+
+
+###
+POST http://localhost:5000/hak_akses
+
 Content-Type: application/json
 {
-   "username": "risqi",
-    "password": "risqi",
+   "nama_akses": "pengguna"
 }

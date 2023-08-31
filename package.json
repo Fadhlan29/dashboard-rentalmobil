@@ -3,19 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ngneat/falso": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "chart.js": "^4.3.3",
+    "datatables.net": "^1.13.6",
+    "dayjs": "^1.11.9",
+    "jquery": "^3.7.0",
+    "jwt-decode": "^3.1.2",
     "picomatch": "^2.3.1",
+    "primereact": "^9.6.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-datepicker": "^4.10.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.8.0",
-    "react-scripts": "5.0.1",
+    "react-router-use-history": "^1.1.0",
+    "react-scripts": "^5.0.1",
+    "react-simple-table2": "^2.0.3",
+    "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.17"
   }
 }

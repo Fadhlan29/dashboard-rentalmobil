@@ -22,6 +22,6 @@ Pesanan.belongsTo(Pengguna, { foreignKey: 'id_pengguna' });
 Pesanan.belongsTo(Mobil, { foreignKey: 'id_mobil' });
 export default Pesanan;
 
-(async()=>{
-    await db.sync();
-})();
+// (async()=>{
+//     await db.sync();
+// })();

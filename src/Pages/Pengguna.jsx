@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { NavbarDashboard, TableUsers } from "../components";
+import React, { useState, useEffect , useRef} from "react";
+import { NavbarDashboard, Tables } from "../components";
 import { Sidebar } from "../components";
 import "../styles/PenggunaStyles/style.css";
+
 
 const Pengguna = () => {
   return (
@@ -11,10 +12,10 @@ const Pengguna = () => {
         <NavbarDashboard />
         <h1 className="content-title">Pengguna</h1>
         <div className="main-content">
-          <TableUsers/>
+            <Tables />
         </div>
       </div>
-    </div>
+    </div>    
   );
 };
 

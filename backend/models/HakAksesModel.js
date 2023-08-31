@@ -10,6 +10,6 @@ const HakAkses = db.define('hak_akses',{
 });
 export default HakAkses;
 
-(async()=>{
-    await db.sync();
-})();
+// (async()=>{
+//     await db.sync();
+// })();

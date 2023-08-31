@@ -1,3 +1,7 @@
+:root {
+    --text-sidebar: #262626;
+}
+
 /* sidebar */
 .sidebar {
     padding: 20px 10px;
